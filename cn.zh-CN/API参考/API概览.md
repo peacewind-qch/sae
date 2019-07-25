@@ -2,7 +2,7 @@
 
 轻量级分布式应用服务提供以下相关API接口。
 
-## 命名空间和VPC {#section_yod_yrl_pkt .section}
+## 命名空间和VPC {#section_luj_kmy_9dd .section}
 
 |API|描述|
 |---|--|
@@ -13,7 +13,7 @@
 |[UpdateNamespace](cn.zh-CN/API参考/命名空间和VPC/UpdateNamespace.md)|更新命名空间信息|
 |[DescribeNamespaceList](cn.zh-CN/API参考/命名空间和VPC/DescribeNamespaceList.md)|获取命名空间列表|
 
-## 应用信息 {#section_eet_l1e_8lv .section}
+## 应用信息 {#section_hgd_cym_wve .section}
 
 |API|描述|
 |---|--|
@@ -28,7 +28,7 @@
 |[ListApplications](cn.zh-CN/API参考/应用信息/ListApplications.md)|获取应用列表|
 |[QueryResourceStatics](cn.zh-CN/API参考/应用信息/QueryResourceStatics.md)|获取应用的资源使用量|
 
-## 应用生命周期 {#section_a0a_jg7_uy7 .section}
+## 应用生命周期 {#section_cpx_mia_ghs .section}
 
 |API|描述|
 |---|--|
@@ -48,7 +48,7 @@
 |[RestartApplication](cn.zh-CN/API参考/应用生命周期/RestartApplication.md)|重启应用|
 |[AbortChangeOrder](cn.zh-CN/API参考/应用生命周期/AbortChangeOrder.md)|中止变更单|
 
-## SLB {#section_jdp_ypg_5bb .section}
+## SLB {#section_fod_2xz_ovv .section}
 
 |API|描述|
 |---|--|
@@ -56,7 +56,7 @@
 |[UnbindSlb](cn.zh-CN/API参考/SLB/UnbindSlb.md)|解绑内网或公网SLB|
 |[DescribeApplicationSlbs](cn.zh-CN/API参考/SLB/DescribeApplicationSlbs.md)|获取应用SLB配置信息|
 
-## 微服务列表 {#section_two_jmd_noa .section}
+## 微服务列表 {#section_q6k_9jc_xbq .section}
 
 |API|描述|
 |---|--|
