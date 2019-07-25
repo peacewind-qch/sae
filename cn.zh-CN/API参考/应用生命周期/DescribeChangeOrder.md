@@ -52,9 +52,6 @@ GET /pop/v1/sam/changeorder/DescribeChangeOrder HTTP/1.1
 |ChangeOrderId|String|765fa5c0-9ebb-4bb4-b383-1f885447b109|变更单ID
 
  |
-|CoTargets| |\[\]|变更实例
-
- |
 |CoType|String|变更类型|创建应用
 
  |
@@ -100,9 +97,6 @@ GET /pop/v1/sam/changeorder/DescribeChangeOrder HTTP/1.1
 |Status|Integer|2|变更单状态，0：准备 1：执行中 2：执行成功 3：执行失败 6：终止 10：系统异常执行失败
 
  |
-|SupportAbortFreeze|Boolean|false|判断 ChangeOrder 回滚发布单，是否支持前端倒计时后才允许终止
-
- |
 |SupportRollback|Boolean|false|是否支持回滚
 
  |
@@ -146,7 +140,6 @@ GET /pop/v1/sam/changeorder/DescribeChangeOrder HTTP/1.1
 	  <Data>
 		    <Status>2</Status>
 		    <Description>版本：1.0 | 镜像名称：nginx </Description>
-		    <SupportAbortFreeze>false</SupportAbortFreeze>
 		    <Pipelines>
 			      <Status>2</Status>
 			      <PipelineName>第1批变更</PipelineName>
@@ -185,7 +178,6 @@ GET /pop/v1/sam/changeorder/DescribeChangeOrder HTTP/1.1
 		"ChangeOrderId":"765fa5c0-9ebb-4bb4-b383-1f885447b109",
 		"SupportRollback":false,
 		"Status":2,
-		"SupportAbortFreeze":false,
 		"BatchCount":1,
 		"CoTypeCode":"CoCreateApp",
 		"CreateTime":"2019-07-11 15:54:49",
@@ -203,8 +195,7 @@ GET /pop/v1/sam/changeorder/DescribeChangeOrder HTTP/1.1
 			}
 		],
 		"CurrentPipelineId":"06-ba2d-46ea-9e79-0727fbca6eda",
-		"BatchWaitTime":0,
-		"CoTargets":[]
+		"BatchWaitTime":0
 	},
 	"Message":"success",
 	"RequestId":"XXXC03A-E74E-467E-B4E2-63E3F5AACF55",
