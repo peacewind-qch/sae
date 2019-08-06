@@ -53,7 +53,7 @@ SAE 应用的部署方式可参考以下表格。
 **说明：** 应用部署程序包名仅允许字母、数字，及中划线\( - \)、下划线\( \_ \)两个特殊符号。
 
     -   **版本**：设置版本（如：1.1.0），不建议用时间戳作为版本号。
-    -   **启动命令设置**（可选）：参照[如何设置 Jar 启动命令](https://help.aliyun.com/document_detail/100337.html)配置。
+    -   **启动命令设置**（可选）：参照[如何设置 Jar 启动命令](https://help.aliyun.com/document_detail/96677.html)配置。
     -   **环境变量设置**：参照[如何设置环境变量](https://help.aliyun.com/document_detail/96560.html)配置。
     -   **Hosts 绑定设置**（可选）：参照[如何设置 Hosts 绑定](https://help.aliyun.com/document_detail/100335.html)配置。
     -   **应用健康检查**（可选）：参照[如何设置应用健康检查](https://help.aliyun.com/document_detail/96713.html)配置。
@@ -84,7 +84,7 @@ SAE 应用的部署方式可参考以下表格。
 **说明：** 应用部署程序包名仅允许字母、数字，及中划线\( - \)、下划线\( \_ \)两个特殊符号。
 
 -   **版本**：设置版本（如：1.1.0），不建议用时间戳作为版本号。
--   **启动命令设置**（可选）：参照[如何设置 Jar 启动命令](https://help.aliyun.com/document_detail/100337.html)配置。
+-   **启动命令设置**（可选）：参照[如何设置 Jar 启动命令](https://help.aliyun.com/document_detail/96677.html)配置。
 -   **环境变量设置**：参照[如何设置环境变量](https://help.aliyun.com/document_detail/96560.html)配置。
 -   **应用健康检查**（可选）：参照[如何设置应用健康检查](https://help.aliyun.com/document_detail/96713.html)配置。
 
