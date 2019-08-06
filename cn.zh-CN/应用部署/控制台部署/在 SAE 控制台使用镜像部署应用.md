@@ -15,8 +15,8 @@ SAE 应用的部署方式可参考以下表格。
 
 ## 前提条件 {#section_5th_epm_m58 .section}
 
-1.  [创建专有网络 VPC](https://help.aliyun.com/document_detail/110363.html#creatVPCInEDASServerless)。
-2.  [创建命名空间](https://help.aliyun.com/document_detail/110363.html#creatNamespaceInEDASServerless)。
+1.  [创建 VPC](../cn.zh-CN/快速入门/准备工作.md#section_xrz_zr9_py3)
+2.  [创建命名空间](../cn.zh-CN/快速入门/准备工作.md#section_cu5_k9p_xuf)。
 3.  [制作应用镜像](https://help.aliyun.com/document_detail/98492.html)。
 
 ## 创建 SAE 应用 {#section_wwi_jgi_33h .section}
@@ -38,7 +38,7 @@ SAE 应用的部署方式可参考以下表格。
 ![](https://aliware-images.oss-cn-hangzhou.aliyuncs.com/edas/EDAS-Serverless/serverless-app-image-development.png)
 
 -   **配置镜像**：在镜像列表的下拉框内选择您所创建的镜像，镜像选中后会在配置镜像后面显示您所选择的镜像。
--   **启动命令设置**（可选）：参照[如何设置 Jar 启动命令](https://help.aliyun.com/document_detail/100337.html)配置。
+-   **启动命令设置**（可选）：参照[如何设置 Jar 启动命令](https://help.aliyun.com/document_detail/96677.html)配置。
 -   **环境变量设置**：参照[如何设置环境变量](https://help.aliyun.com/document_detail/96560.html)配置。
 -   **Hosts 绑定设置**：参照[如何设置 Hosts 绑定](https://help.aliyun.com/document_detail/100335.html)配置。
 -   **应用健康检查**（可选）：参照[如何设置应用健康检查](https://help.aliyun.com/document_detail/96713.html)配置。
