@@ -11,10 +11,10 @@ SAE 应用的部署方式可参考以下表格。
 |HSF|WAR、JAR、镜像|/|
 |多语言应用|镜像|/|
 
-## 前提条件 {#section_cyn_arn_twp .section}
+## 前提条件 { .section}
 
--   [创建专有网络 VPC](https://help.aliyun.com/document_detail/110363.html#creatVPCInEDASServerless)。
--   有环境隔离需求，请[创建命名空间](https://help.aliyun.com/document_detail/110363.html#creatNamespaceInEDASServerless)。
+-   [创建命名空间](../cn.zh-CN/快速入门/准备工作.md#section_cu5_k9p_xuf)。
+-   有环境隔离需求，请[创建 VPC](../cn.zh-CN/快速入门/准备工作.md#section_xrz_zr9_py3)。
 
 ## 应用 Demo 下载 {#section_daq_hh0_21n .section}
 
