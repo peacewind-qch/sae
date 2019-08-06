@@ -13,8 +13,8 @@ SAE 是面向应用的 Serverless PaaS 平台，向上抽象了应用的概念�
 
 ## 前提条件 {#section_nt6_dmy_cb0 .section}
 
--   [创建专有网络 VPC](https://help.aliyun.com/document_detail/110363.html#creatVPCInEDASServerless)。
--   有环境隔离需求，请[创建命名空间](https://help.aliyun.com/document_detail/110363.html#creatNamespaceInEDASServerless)。
+-   [创建命名空间](../cn.zh-CN/快速入门/准备工作.md#section_cu5_k9p_xuf)。
+-   有环境隔离需求，请[创建 VPC](../cn.zh-CN/快速入门/准备工作.md#section_xrz_zr9_py3)。
 
 ## 创建 SAE 应用 {#section_gz1_4vd_795 .section}
 
