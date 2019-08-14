@@ -1,14 +1,14 @@
 # Maven 插件自动化部署 SAE 应用 {#concept_110639_zh .concept}
 
-SAE 原有应用部署需要在控制台按照页面指示来一步步完成。为改进开发者体验，我们开发了用于自动化部署应用的 toolkit-maven-plugin 插件，通过使用此插件，您只需简单几步即可创建及部署 SAE 应用。
+SAE 应用除通过控制台方式进行应用部署，还可使用应用开发工具进行部署。本节介绍如何通过 Maven 的 toolkit-maven-plugin 插件进行自动化部署。此方式适用于有应用开发经验用户。
 
 ## 自动化部署 {#section_hyw_lyq_yrn .section}
 
-通过 toolkit-maven-plugin 插件自动化部署应用的过程为：在工程 pom.xml 文件中添加插件依赖，配置插件，进行构建部署。
+通过 toolkit-maven-plugin 插件自动化部署应用的流程：添加插件依赖，配置插件，构建部署。
 
 1.  添加插件依赖。
 
-    在您的打包工程的 pom.xml 文件中增加如下的插件依赖。
+    在 pom.xml 文件中增加如下所示的插件依赖。
 
     ``` {#codeblock_eys_2az_iy3 .language-xml}
     <build>
@@ -25,9 +25,11 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
 
 2.  配置插件
 
-    插件配置分为三个部分：账号配置，打包配置及部署配置。下面简要介绍如何创建这三个配置，更多自定义配置项可参考[打包参数](#)及[部署参数](#)。
+    配置插件主要包含账号配置，打包配置及部署配置。如果需要更多自定义配置项可参考[打包参数](#)和[部署参数](#)进行设置。
 
-    1.  在打包工程的根目录下创建一个文件格式为 `YAML` 的账号配置文件，示例命名为`toolkit_profile.yaml`，填入以下信息：
+    1.  账号配置
+
+        在打包工程的根目录下创建文件格式为 `YAML` 的账号配置文件，命名为`toolkit_profile.yaml`并填入如下信息：
 
         ``` {#codeblock_zug_ow2_oxf .language-yaml}
         regionId:        #应用所在区域，如北京为`cn-beijing`，上海为`cn-shanghai`，杭州为`cn-hangzhou`。
@@ -36,7 +38,9 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
         									
         ```
 
-    2.  在打包工程的根目录下创建一个文件格式为 `YAML` 的打包配置文件，如果打包工程为 Maven 的子模块，则需要在子模块的目录下创建该文件，示例命名为`toolkit_package.yaml`，填入以下信息：
+    2.  打包配置
+
+        在打包工程的根目录下创建文件格式为 `YAML` 的打包配置文件。如果打包工程为 Maven 的子模块，则需要在子模块的目录下创建该文件，并命名为`toolkit_package.yaml`，填入如下信息：
 
         ``` {#codeblock_6h8_95a_oy0 .language-yaml}
         apiVersion: V1
@@ -48,7 +52,9 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
         									
         ```
 
-    3.  在打包工程的根目录下创建一个文件格式为 `YAML` 的部署文件，示例命名为`toolkit_deploy.yaml`，填入以下信息：
+    3.  部署配置
+
+        在打包工程的根目录下创建文件格式为 `YAML` 的部署文件，命名为`toolkit_deploy.yaml`，并填入如下信息：
 
         ``` {#codeblock_zgx_ww4_cqx .language-yaml}
         apiVersion: V1
@@ -64,7 +70,7 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
 
 3.  构建部署
 
-    进入`pom.xml`所在的目录（如您希望部署子模块，则进入子模块`pom.xml`所在的目录），执行如下命令：
+    进入`pom.xml`所在的目录（如果部署 Maven 子模块，则进入子模块`pom.xml`所在的目录），执行如下命令：
 
     ``` {#codeblock_jey_pkp_4if .language-shell}
     mvn clean package toolkit:deploy -Dtoolkit_profile=toolkit_profile.yaml -Dtoolkit_package=toolkit_package.yaml -Dtoolkit_deploy=toolkit_deploy.yaml
@@ -77,18 +83,16 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
     -   `-Dtoolkit_profile`：指定账号配置文件。如果账号文件跟 `pom.xml` 在同一个目录下，且名字为`.toolkit_profile.yaml`（注意：文件名最前面有个小数点），可不填此参数，插件会自动获取。
     -   `-Dtoolkit_package`: 指定打包文件。如果打包文件跟 `pom.xml` 在同一个目录下，且名字为`.toolkit_package.yaml`（注意：文件名最前面有个小数点），可不填此参数，插件会自动获取。
     -   `-Dtoolkit_deploy`: 指定部署文件。如果部署文件跟 `pom.xml` 在同一个目录下，且名字为`.toolkit_deploy.yaml`（注意：文件名最前面有个小数点），可不填此参数，插件会自动获取取。
-    执行该打包命令后，我们可以看到如下输出：
+    执行该打包命令后，系统显示如下结果，当回显信息中显示“BUDILD SUCCESS”表示部署成功。
 
     ![](http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/assets/pic/110639/cn_zh/1552453792195/1537957243390-51f79f1a-b03f-4d7e-b0bb-4fa242ceb003.jpeg)
-
-    现在您已经成功使用toolkit-maven-plugin部署应用了。关于更多使用方式可阅读以下章节。
 
 
 ## 更多配置项 {#section_cr2_4vo_awr .section}
 
 1.  打包参数
 
-    打包文件所支持的参数如下：
+    打包文件支持的参数如下所示：
 
     ``` {#codeblock_cdu_63g_szj .language-yaml}
     apiVersion: V1
@@ -114,7 +118,7 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
 
 2.  部署参数
 
-    部署文件所支持的参数如下：
+    部署文件支持的参数如下所示：
 
     ``` {#codeblock_0f0_0iy_rah .language-yaml}
     apiVersion: V1
@@ -162,100 +166,101 @@ SAE 原有应用部署需要在控制台按照页面指示来一步步完成。�
     						
     ```
 
-3.  部署示例
 
-    下面展示常用的部署场景及相关配置：
+## 典型场景示例 {#section_iym_867_g0l .section}
 
-    -   配置示例一：本地构建War（或FatJar）包进行部署
+典型部署场景及相关配置示例。
 
-        假设您在北京环境有一个 WAR（或 FatJar）类型的 SAE 应用，希望本地构建 WAR（或 FatJar）进行部署。那么可以使用如下的打包配置和部署配置：
+-   场景一：本地构建War（或FatJar）包进行部署
 
-        -   打包文件：
+    假设您在北京环境有 WAR（或 FatJar）类型的 SAE 应用，期望本地构建 WAR（或 FatJar）进行部署。打包配置和部署配置如下所示。
 
-            ``` {#codeblock_eqp_lc5_zoz .language-yaml}
-            apiVersion: V1
-            kind: AppPackage
-            spec:
-              packageType: War
-            											
-            ```
+    -   打包文件：
 
-        -   部署文件：
+        ``` {#codeblock_go7_qrn_70q .language-yaml}
+        apiVersion: V1
+        kind: AppPackage
+        spec:
+          packageType: War
+        									
+        ```
 
-            ``` {#codeblock_58g_mfr_gbg .language-yaml}
-            apiVersion: V1
-            kind: AppDeployment
-            spec:
-              type: serverless
-              target:
-                appId:  #应用ID。插件会使用此应用进行部署，如未填入则使用namespaceId和appName来查找应用进行部署。
-                namespaceId:  #【可选】命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
-                appName:      #【可选】应用名称，如不清楚appId，可使用此命名空间及应用名称进行部署
-            											
-            ```
+    -   部署文件：
 
-    -   配置示例二：使用已有镜像地址部署镜像类型应用
+        ``` {#codeblock_4t9_urs_vvq .language-yaml}
+        apiVersion: V1
+        kind: AppDeployment
+        spec:
+          type: serverless
+          target:
+            appId:  #应用ID。插件会使用此应用进行部署，如未填入则使用namespaceId和appName来查找应用进行部署。
+            namespaceId:  #【可选】命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
+            appName:      #【可选】应用名称，如不清楚appId，可使用此命名空间及应用名称进行部署
+        									
+        ```
 
-        假设您在北京环境有一个镜像类型应用，希望使用已有的镜像（registry.cn-beijing.aliyuncs.com/test/gateway:latest ）来部署应用。那么可以使用如下的打包配置和部署配置：
+-   场景二：使用已有镜像地址部署镜像类型应用
 
-        -   打包文件：
+    假设您在北京环境有一个镜像类型应用，期望使用已有的镜像（registry.cn-beijing.aliyuncs.com/test/gateway:latest ）部署应用。打包配置和部署配置如下所示。
 
-            ``` {#codeblock_eox_1s0_s1c .language-yaml}
-            apiVersion: V1
-            kind: AppPackage
-            spec:
-              packageType: Image
-              imageUrl: registry.cn-beijing.aliyuncs.com/test/gateway:latest
-            											
-            ```
+    -   打包文件：
 
-        -   部署文件：
+        ``` {#codeblock_2n3_6tj_yo1 .language-yaml}
+        apiVersion: V1
+        kind: AppPackage
+        spec:
+          packageType: Image
+          imageUrl: registry.cn-beijing.aliyuncs.com/test/gateway:latest
+        									
+        ```
 
-            ``` {#codeblock_b1k_96k_b49 .language-yaml}
-            apiVersion: V1
-            kind: AppDeployment
-            spec:
-              type: serverless
-              target:
-                appId:  #应用ID。插件会使用此应用进行部署，如未填入则使用namespaceId和appName来查找应用进行部署。
-                namespaceId:  #【可选】命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
-                appName:      #【可选】应用名称，如不清楚appId，可使用此命名空间及应用名称进行部署
-            											
-            ```
+    -   部署文件：
 
-    -   配置示例三：本地构建镜像上传到仓库并部署应用
+        ``` {#codeblock_zjv_fhs_2jq .language-yaml}
+        apiVersion: V1
+        kind: AppDeployment
+        spec:
+          type: serverless
+          target:
+            appId:  #应用ID。插件会使用此应用进行部署，如未填入则使用namespaceId和appName来查找应用进行部署。
+            namespaceId:  #【可选】命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
+            appName:      #【可选】应用名称，如不清楚appId，可使用此命名空间及应用名称进行部署
+        									
+        ```
 
-        假设您在北京环境有一个镜像类型应用，希望在本地打包构建镜像，上传到阿里云镜像仓库并部署应用，那么可以使用如下的打包配置和部署配置：
+-   场景三：本地构建镜像上传至仓库并部署应用
 
-        -   打包文件：
+    假设您在北京环境有镜像类型应用，期望在本地编译并构建为镜像，并上传到阿里云镜像仓库进行部署，打包配置和部署配置如下所示。
 
-            ``` {#codeblock_2vv_rba_yge .language-yaml}
-            apiVersion: V1
-            kind: AppPackage
-            spec:
-              packageType: Image
-              build:
-                docker:
-                   dockerfile: Dockerfile #指定Dockerfile
-                   imageRepoAddress:      #镜像仓库地址
-                   imageTag:              #镜像Tag
-                   imageRepoUser:         #镜像仓库用户名
-                   imageRepoPassword:     #镜像仓库密码
-            											
-            ```
+    -   打包文件：
 
-        -   部署文件：
+        ``` {#codeblock_6bm_rj8_rog .language-yaml}
+        apiVersion: V1
+        kind: AppPackage
+        spec:
+          packageType: Image
+          build:
+            docker:
+               dockerfile: Dockerfile #指定Dockerfile
+               imageRepoAddress:      #镜像仓库地址
+               imageTag:              #镜像Tag
+               imageRepoUser:         #镜像仓库用户名
+               imageRepoPassword:     #镜像仓库密码
+        									
+        ```
 
-            ``` {#codeblock_4jb_jxm_bmw .language-yaml}
-            apiVersion: V1
-            kind: AppDeployment
-            spec:
-              type: serverless
-              target:
-                appId:  #应用ID。插件会使用此应用进行部署，如未填入则使用namespaceId和appName来查找应用进行部署。
-                namespaceId:  #【可选】命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
-                appName:      #【可选】应用名称，如不清楚appId，可使用此命名空间及应用名称进行部署
-            											
-            ```
+    -   部署文件：
+
+        ``` {#codeblock_zyc_qlw_akm .language-yaml}
+        apiVersion: V1
+        kind: AppDeployment
+        spec:
+          type: serverless
+          target:
+            appId:  #应用ID。插件会使用此应用进行部署，如未填入则使用namespaceId和appName来查找应用进行部署。
+            namespaceId:  #【可选】命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
+            appName:      #【可选】应用名称，如不清楚appId，可使用此命名空间及应用名称进行部署
+        									
+        ```
 
 
