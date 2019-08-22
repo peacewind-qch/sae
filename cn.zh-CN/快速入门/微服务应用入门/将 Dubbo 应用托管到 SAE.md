@@ -22,7 +22,6 @@
             原生 Dubbo 应用中的注册中心为 ZooKeeper，依赖如下：
 
             ``` {#codeblock_kc0_quh_228}
-            
             <dependency>
                     <groupId>org.apache.dubbo</groupId>
                     <artifactId>dubbo-dependencies-zookeeper</artifactId>
@@ -31,7 +30,7 @@
             </dependency>
             ```
 
-            需要修改为 SAE 注册中心。undefined
+            需要修改为 SAE 注册中心。
 
             ``` {#codeblock_7dc_6za_k70 .language-xml}
             <dependency>
