@@ -2,7 +2,7 @@
 
 轻量级分布式应用服务提供以下相关API接口。
 
-## 命名空间和VPC {#section_aln_uc7_idq .section}
+## 命名空间和VPC {#section_lcw_mkv_voc .section}
 
 |API|描述|
 |---|--|
@@ -11,8 +11,9 @@
 |[DescribeNamespace](cn.zh-CN/API参考/命名空间和VPC/DescribeNamespace.md)|查询命名空间详细信息|
 |[DescribeNamespaces](cn.zh-CN/API参考/命名空间和VPC/DescribeNamespaces.md)|查询命名空间列表|
 |[UpdateNamespace](cn.zh-CN/API参考/命名空间和VPC/UpdateNamespace.md)|更新命名空间信息|
+|[DescribeNamespaceList](cn.zh-CN/API参考/命名空间和VPC/DescribeNamespaceList.md)|获取命名空间列表|
 
-## 应用信息 {#section_smm_w1z_mbz .section}
+## 应用信息 {#section_ebd_7jp_wbm .section}
 
 |API|描述|
 |---|--|
@@ -27,7 +28,7 @@
 |[ListApplications](cn.zh-CN/API参考/应用信息/ListApplications.md)|获取应用列表|
 |[QueryResourceStatics](cn.zh-CN/API参考/应用信息/QueryResourceStatics.md)|获取应用的资源使用量|
 
-## 应用生命周期 {#section_wgq_erv_xde .section}
+## 应用生命周期 {#section_l9w_fqr_fqy .section}
 
 |API|描述|
 |---|--|
@@ -47,7 +48,7 @@
 |[RestartApplication](cn.zh-CN/API参考/应用生命周期/RestartApplication.md)|重启应用|
 |[AbortChangeOrder](cn.zh-CN/API参考/应用生命周期/AbortChangeOrder.md)|中止变更单|
 
-## SLB {#section_rhe_r4j_nza .section}
+## SLB {#section_njx_bq5_fdz .section}
 
 |API|描述|
 |---|--|
@@ -55,7 +56,7 @@
 |[UnbindSlb](cn.zh-CN/API参考/SLB/UnbindSlb.md)|解绑内网或公网SLB|
 |[DescribeApplicationSlbs](cn.zh-CN/API参考/SLB/DescribeApplicationSlbs.md)|获取应用SLB配置信息|
 
-## 微服务列表 {#section_qy4_jnc_o9e .section}
+## 微服务列表 {#section_lrw_4rf_hl6 .section}
 
 |API|描述|
 |---|--|
