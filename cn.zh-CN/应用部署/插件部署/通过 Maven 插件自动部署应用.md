@@ -63,7 +63,7 @@ SAE 应用除通过控制台方式进行应用部署，还可通过 Maven 的 to
         type: serverless
         target:
          appId:        #部署应用的ID，如果配置了appId则无需配置namespaceId和appName
-         namespaceId:  #命名空间，如不清楚appId，可使用此命名空间及应用名称进行部署
+         namespaceId:  #所属区域，如不清楚appId，可使用此所属区域及应用名称进行部署
          appName:      #应用名称，如不清楚appId，可使用此应用名称及命名空间进行部署
         									
         ```
