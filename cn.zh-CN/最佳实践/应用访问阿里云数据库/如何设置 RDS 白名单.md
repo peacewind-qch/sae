@@ -14,23 +14,23 @@
 1.  登录 [RDS 管理控制台](https://rdsnext.console.aliyun.com/)。
 2.  在控制台页面左上角，选择实例所在地域。
 
-    **说明：** 目前 SAE 仅开放了**华北 2 （北京）**和**华东 1 （杭州）**地域，故请选择**华北 2 （北京）**或**华东 1 （杭州）**地域。
+    **说明：** 目前 SAE 现已开放了**华北 2 （北京）**、**华东 1 （杭州）**、**华东 2 （上海）**和**华南 1 （深证）**区域。
 
 3.  在左侧导航栏单击**实例列表**，然后在**云数据管理**的**基本信息**页签单击具体实例名称。
 4.  在实例基本信息页面左侧导航栏中单击**数据安全性**。
 5.  在数据安全性页面的**白名单设置**页签中，单击 default 区域右侧的**修改**按钮。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156721889953763_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156740354053763_zh-CN.png)
 
 6.  在弹出的对话框中，将 SAE 应用所在的 VPC 网络的网段地址配置在白名单输入框中。
     1.  登录 [VPC 控制台](https://vpc.console.aliyun.com/)，在专有网络列表中找到应用所在的 VPC，单击该 VPC 的名称进入专有网络详情页面。
     2.  复制应用所在的 VPC 的IPv4网段。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156721889953768_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156740354053768_zh-CN.png)
 
     3.  在**组内白名单设置**框中粘贴该 VPC 的 IPv4 网段地址，然后单击**确定**。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156721889953770_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156740354053770_zh-CN.png)
 
 7.  在完成以上设置后，您的 SAE 应用就能访问本 VPC 内的 RDS 数据库了。
 
@@ -48,11 +48,11 @@
     2.  在修改白名单分组对话框中，将 SAE 应用购买的弹性公网 IP 配置在白名单输入框中。
         1.  登录 [VPC 控制台](https://vpc.console.aliyun.com/)，在左侧导航栏单击 **NAT 网关**，复制应用实例所配置的**弹性公网 IP**。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156721889953780_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156740354053780_zh-CN.png)
 
         2.  在**组内白名单**设置框中粘贴该 VPC 的 **弹性公网 IP**地址，然后单击**确定**。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156721889953781_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067696/156740354053781_zh-CN.png)
 
     3.  在完成以上设置后，您的 SAE 应用就能跨 VPC、跨 Region 访问 RDS 数据库了。
 
