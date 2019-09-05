@@ -20,7 +20,7 @@ Alibaba Cloud Toolkit for Eclipse（本文简称 Cloud Toolkit）为阿里巴巴
 3.  在 Available Software 对话框的 **Work with** 文本框中，输入 Cloud Toolkit for Eclipse 的 URL。
 4.  在下图所示的列表区域中勾选需要的组件 **Alibaba Cloud Toolkit Core** 和 **Alibaba Cloud Toolkit Deployment Tools**，并在下方 Details 区域中去勾选 **Connect all update sites during install to find required software** ，取消勾选后单击**Next**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156721856553391_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156769725453391_zh-CN.png)
 
 5.  按照 Eclipse 安装页面的提示，完成后续安装步骤。
 
@@ -28,7 +28,7 @@ Alibaba Cloud Toolkit for Eclipse（本文简称 Cloud Toolkit）为阿里巴巴
 
 6.  Cloud Toolkit 插件安装完成后，重启 Eclipse。重启后在工具栏显示 Alibaba Cloud Toolkit 图标。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156721856553395_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156769725453395_zh-CN.png)
 
 
 ## 配置 Cloud Toolkit 账号 {#section_l7z_kaq_d1n .section}
@@ -39,7 +39,7 @@ Alibaba Cloud Toolkit for Eclipse（本文简称 Cloud Toolkit）为阿里巴巴
 2.  在工具栏 Cloud Toolkit 图标右侧下拉菜单中选择 **Alibaba Cloud Preference…** \> **Alibaba Cloud Tooll** \> **Accounts**。
 3.  在 Accounts 界面中设置 **Access Key ID** 和 **Access Key Secret**并单击 **OK**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156721856553416_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156769725453416_zh-CN.png)
 
     -   已有阿里云账号，在 Accounts 界面中单击 **Get existing AK/SK**，进入并登录阿里云登录页面，系统自动跳转至安全信息管理页面，获取 **Access Key ID** 和 **Access Key Secret**。
     -   没有阿里云账号，在 Accounts 界面中单击 **Sign up**，进入阿里云账号注册页面并完成注册。注册完成后并获取 **Access Key ID** 和 **Access Key Secret**。
@@ -52,7 +52,7 @@ Cloud Toolkit 插件目前仅支持将应用以 WAR包、JAR包或Image部署到
 1.  在 Eclipse 界面左侧的 Package Explorer 中选择创建的应用工程名，并在弹出的下拉菜单中选择**Alibaba Cloud** \> **Deploy to EDAS Serverless…**。
 2.  在 Deploy to EDAS Serverless 对话框中，依据需求选择应用的 **Region**、**Namespace**、**Application**，并设置部署方式，配置完成后单击 **Deploy**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156721856553440_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156769725453440_zh-CN.png)
 
     应用信息说明：
 
@@ -65,7 +65,7 @@ Cloud Toolkit 插件目前仅支持将应用以 WAR包、JAR包或Image部署到
 
 在插件运行过程中，现场需要插件运行，请在 Progress 页面终止 EDAS-deploy 进程。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156721856653449_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067665/156769725553449_zh-CN.png)
 
 ## 问题反馈 {#section_w8o_tsp_kji .section}
 
