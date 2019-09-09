@@ -17,7 +17,7 @@
 2.  在左侧导航树选择**Serverless 应用引擎** \> **应用列表**，并在应用列表页面单击具体应用名称。
 3.  在应用详情页面的**基本信息** \> **应用访问设置**区域绑定 SLB。 添加公网 SLB 单击**添加公网 SLB 访问**；添加内网 SLB 单击**添加私网 SLB 访问**。本文以**添加公网 SLB 访问**为例。
 
-    ![应用访问设置1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156773731756572_zh-CN.png)
+    ![应用访问设置1](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156800827156572_zh-CN.png)
 
     **说明：** 
 
@@ -25,7 +25,7 @@
     -   绑定 SLB 前，请检查您的阿里云账户余额是否大于 100 元，SLB 额度（每个账户 50 个）是否已用满。账户余额不足或者 SLB 额度用满时，都会导致添加公网 SLB 失败。
     1.  单击**公网访问地址**所在行的**添加公网 SLB 访问**，开始添加公网 SLB。 
 
-        ![添加公网SLB访问](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156773731756535_zh-CN.png)
+        ![添加公网SLB访问](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156800827156535_zh-CN.png)
 
     2.  选择 SLB。 
         -   新建 SLB：在**请选择 SLB**所在行下拉列表中选择**新建**，系统自动进行**SLB 配额检查**和**账户余额检查**，检查通过后为应用自动购买全新的 SLB 实例，SLB 具体信息显示在下方。单击**确认**， SLB 新建完成。
@@ -54,14 +54,14 @@
 1.  编辑 SLB
 2.  在应用详情页面的**基本信息** \> **应用访问设置**区域，请依据网络需求单击**编辑私网 SLB 访问**或**编辑公网网 SLB 访问**。 
 
-    ![编辑删除SLB](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156773731757199_zh-CN.png)
+    ![编辑删除SLB](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156800827157199_zh-CN.png)
 
 3.  在弹出的编辑私网 SLB 访问或编辑公网 SLB 访问对话框，修改所需信息并单击**确认**。
 
 1.  删除SLB
 2.  在应用详情页面的**基本信息** \> **应用访问设置**区域，单击**删除私网 SLB 访问**或**删除公网 SLB 访问**。 
 
-    ![编辑删除SLB](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156773731757199_zh-CN.png)
+    ![编辑删除SLB](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1067673/156800827157199_zh-CN.png)
 
 3.  单击**确认**，并在**删除私网SLB访问**或者**删除公网 SLB 访问**对话框中单击**确认**。
 
