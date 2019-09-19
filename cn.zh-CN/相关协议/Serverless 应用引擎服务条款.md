@@ -44,7 +44,7 @@
 
 **4.3. 您应按照阿里云的网站页面提示及本服务协议的约定支付相应服务费用。**
 
-**4.4. 就阿里云服务的使用应符合阿里云的《[服务使用规则](http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201802101429_52750.html)**
+**4.4. 就阿里云服务的使用应符合阿里云的《[服务使用规则](http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201802101429_52750.html)》以及本服务协议。**
 
 4.5. 您对自己存放在阿里云云平台上的数据以及进入和管理阿里云云平台上各类产品与服务的口令、密码的完整性和保密性负责。因您维护不当或保密不当致使上述数据、口令、密码等丢失或泄漏所引起的损失和后果均由您承担。
 
@@ -316,7 +316,7 @@
 
 **11.1 就按量后付费形式售卖的云解析PrivateZone服务，您应保证及时向您的账户充值，以保证服务的持续使用，如您发生欠费的：自首次欠费之时起，您仍可继续使用阿里云云解析PrivateZone服务24小时；如24小时届满，您仍未成功充值并足以支付所欠服务费用的，阿里云将暂停提供服务，但仍保留您配置信息； 自您首次欠费发生之时起7日内，您仍未成功充值并足以支付所欠服务费用的，阿里云将在7日届满（自首次欠费发生之日的暂停开始时刻至第7日相同时刻为期限届满）阿里云将终止服务并清空您的配置信息。**
 
-**11.2. 您在使用云解析PrivateZone服务时，还应遵守阿里云云解析的《[使用限制](https://help.aliyun.com/document_detail/71036.html)**
+**11.2. 您在使用云解析PrivateZone服务时，还应遵守阿里云云解析的《[使用限制](https://help.aliyun.com/document_detail/71036.html)》，如违反本规则，阿里云有权根据暂停、终止为您提供服务。**
 
 -
 
@@ -326,7 +326,7 @@
 
 **12.2. 就按量付费的图形工作站服务，您应及时向您的阿里云账户中充值，以保证服务的持续使用，如您就按量付费服务发生欠费的，自首次发生欠费时，您仍可继续使用服务1个小时，如1个小时届满之时，您仍未充值并清偿所欠欠款的，阿里云将停止为您提供服务。在服务期停止后7日（7X24即168个小时）届满，阿里云将释放您的实例，并清空您的数据。**
 
-**12.3. 就图形工作站的服务，阿里云按照《[图形工作站服务等级协议](http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201809101618_82551.html)**
+**12.3. 就图形工作站的服务，阿里云按照《[图形工作站服务等级协议](http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201809101618_82551.html)》的约定为您提供服务。**
 
 -
 
@@ -432,7 +432,7 @@
 
 **20.3. 你理解并确认，阿里云Data Lake Analytics服务并不负责您提交任务以及使用该服务处理结果的存储，您应及时存储并备份。**
 
-**20.4. 就您购买的Data Lake Analytics服务，阿里云承诺按照阿里云在官网上公布的《[Data Lake Analytics服务等级协议](http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201812101004_86641.html)**
+**20.4. 就您购买的Data Lake Analytics服务，阿里云承诺按照阿里云在官网上公布的《[Data Lake Analytics服务等级协议](http://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud201812101004_86641.html)》提供服务。**
 
 -
 
